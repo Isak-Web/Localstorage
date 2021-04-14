@@ -5,33 +5,30 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Calander login page</title>
+<title>Login page</title>
 
-<link rel="stylesheet" href="Locals.css">
-<script src="Javal.js"></script>
 </head>
 <body>
 <div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
 		<h2>Logga in</h2>
 		<p>Skapa ett konto!</p>
 		<hr>
         <div class="form-group">
 			<div class="input-group">
 				<span class="input-group-addon"><i class="fa fa-user"></i></span>
-				<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+				<input type="text" id="Name" class="form-name" name="username" placeholder="Username" required="required">
 			</div>
         </div>
         <div class="form-group">
 			<div class="input-group">
 				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
-				<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+				<input type="email" id="mail" class="form-mail" name="email" placeholder="Email Address" required="required">
 			</div>
         </div>
 		<div class="form-group">
 			<div class="input-group">
 				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-				<input type="text" class="form-control" name="password" placeholder="Password" required="required">
+				<input type="text" id="password" class="form-password" name="password" placeholder="Password" required="required">
 			</div>
         </div>
 		<div class="form-group">
@@ -42,12 +39,13 @@
 
 		<div class="form-group">
 
-          <p>  <a href="Lcals.html"> </p>
-            <button onClick="visa" type="submit" class="btn btn-primary btn-lg">Logga in</button>
+			
+			<button  type="submit">Logga in</button>
 
         </div>
     </form>
 
 </div>
+<script src="Javal.js"></script>
 </body>
 </html>
