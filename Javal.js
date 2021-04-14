@@ -1,18 +1,23 @@
-let Name     = document.getElementbyId('.form-name');
-let Mail     = document.getElementbyId('.form-mail');
-let Password = document.getElementbyId('.form-password');
+let key=0
+
+
+let name     = document.getElementbyId('name');
+let mail     = document.getElementbyId('mail');
+let password = document.getElementbyId('password');
 
 
 
 
 
 
-function button(){
-    localStorage.setItem('Name', 1);
-    localStorage.setItem('Mail',2);
-    localStorage.setItem('Password',3);
+function local(){
+    localStorage.setItem('Name', name.value);
+    localStorage.setItem('Mail', mail.value);
+    localStorage.setItem('Password', password.value);
 
 }
+
+
 
 
     
